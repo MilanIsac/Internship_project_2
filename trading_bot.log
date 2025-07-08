@@ -1,0 +1,91 @@
+2025-07-08 21:10:50,730 INFO:Initialized BasicBot (testnet=True)
+2025-07-08 21:10:50,731 INFO:Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0}
+2025-07-08 21:10:51,132 INFO:Order response: {'orderId': 5225063225, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJde75c09612971fac1867ba', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.000', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751989251031}
+2025-07-08 21:13:32,337 ERROR:Exception in callback _HandlerDelegate.execute.<locals>.<lambda>() at E:\All projects\internship_project_2\venv\Lib\site-packages\tornado\web.py:2498
+handle: <Handle _HandlerDelegate.execute.<locals>.<lambda>() at E:\All projects\internship_project_2\venv\Lib\site-packages\tornado\web.py:2498>
+Traceback (most recent call last):
+  File "E:\All projects\internship_project_2\venv\Lib\site-packages\streamlit\web\bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\All projects\internship_project_2\venv\Lib\site-packages\tornado\web.py", line 2498, in <lambda>
+    fut.add_done_callback(lambda f: f.result())
+                                    ~~~~~~~~^^
+  File "E:\All projects\internship_project_2\venv\Lib\site-packages\tornado\web.py", line 1796, in _execute
+    async def _execute(
+asyncio.exceptions.CancelledError
+2025-07-08 21:15:34,418 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:15:34,421 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 10.0, 'price': 0.0, 'timeInForce': 'GTC'}
+2025-07-08 21:15:35,985 ERROR: Order failed: APIError(code=-4001): Price less than 0.
+2025-07-08 21:15:50,785 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:15:50,785 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 10.0, 'price': 10.0, 'timeInForce': 'GTC'}
+2025-07-08 21:15:51,399 ERROR: Order failed: APIError(code=-4013): Price less than min price.
+2025-07-08 21:16:40,708 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:16:40,710 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 10.0, 'price': 600000.0, 'timeInForce': 'GTC'}
+2025-07-08 21:16:41,382 ERROR: Order failed: APIError(code=-2019): Margin is insufficient.
+2025-07-08 21:24:02,542 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:24:02,544 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 60000.0}
+2025-07-08 21:27:13,010 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:27:13,011 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 60000.0}
+2025-07-08 21:27:13,639 ERROR: Order failed: APIError(code=-4005): Quantity greater than max quantity.
+2025-07-08 21:27:26,337 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:27:26,337 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 60.0}
+2025-07-08 21:27:26,689 ERROR: Order failed: Margin is insufficient. You don't have enough USDT to place this order. Try reducing your order size or get more testnet funds.
+2025-07-08 21:27:33,454 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:27:33,454 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 6.0}
+2025-07-08 21:27:33,858 ERROR: Order failed: Margin is insufficient. You don't have enough USDT to place this order. Try reducing your order size or get more testnet funds.
+2025-07-08 21:27:40,104 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:27:40,104 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 6.0}
+2025-07-08 21:27:40,714 ERROR: Order failed: Margin is insufficient. You don't have enough USDT to place this order. Try reducing your order size or get more testnet funds.
+2025-07-08 21:27:49,935 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:27:49,935 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0}
+2025-07-08 21:27:50,551 INFO: Order response: {'orderId': 5225190679, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJe7559ea2f146adb3f2ffb6', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.000', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751990270371}
+2025-07-08 21:27:51,266 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:27:51,266 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0}
+2025-07-08 21:27:51,689 ERROR: Order failed: Margin is insufficient. You don't have enough USDT to place this order. Try reducing your order size or get more testnet funds.
+2025-07-08 21:27:54,288 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:27:54,288 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0}
+2025-07-08 21:27:55,623 ERROR: Order failed: Margin is insufficient. You don't have enough USDT to place this order. Try reducing your order size or get more testnet funds.
+2025-07-08 21:28:04,946 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:28:04,946 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2025-07-08 21:28:05,291 INFO: Order response: {'orderId': 5225192271, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ417d800822567000d8f030', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751990285206}
+2025-07-08 21:28:18,427 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:28:18,427 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 0.0, 'timeInForce': 'GTC'}
+2025-07-08 21:28:18,911 ERROR: Order failed: Price cannot be zero or negative. Please enter a valid price.
+2025-07-08 21:28:25,887 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:28:25,887 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 0.01, 'timeInForce': 'GTC'}
+2025-07-08 21:28:26,490 ERROR: Order failed: The price you entered is below the minimum allowed for this trading pair. Please enter a higher price.
+2025-07-08 21:28:33,152 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:28:33,152 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 60000.0, 'timeInForce': 'GTC'}
+2025-07-08 21:28:33,866 INFO: Order response: {'orderId': 5225196557, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJc97210e6d3477891c021ae', 'price': '60000.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751990313574}
+2025-07-08 21:28:43,648 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:28:43,648 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 60000.0, 'timeInForce': 'GTC'}
+2025-07-08 21:28:44,002 INFO: Order response: {'orderId': 5225197376, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ2dce8266f90d14d53cee9c', 'price': '60000.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751990323916}
+2025-07-08 21:32:04,539 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:32:04,539 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2025-07-08 21:32:05,320 INFO: Order response: {'orderId': 5225213418, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ7922c907f246aaae226dca', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751990525149}
+2025-07-08 21:33:32,723 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:33:32,724 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.011}
+2025-07-08 21:33:33,276 ERROR: Order failed: APIError(code=-1022): Signature for this request is not valid.
+2025-07-08 21:33:50,694 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:33:50,694 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.011}
+2025-07-08 21:33:51,153 ERROR: Order failed: APIError(code=-1022): Signature for this request is not valid.
+2025-07-08 21:34:08,094 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:34:08,106 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.011, 'price': 0.0, 'timeInForce': 'GTC'}
+2025-07-08 21:34:08,709 ERROR: Order failed: APIError(code=-1022): Signature for this request is not valid.
+2025-07-08 21:34:14,316 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:34:14,317 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.011, 'price': 60000.0, 'timeInForce': 'GTC'}
+2025-07-08 21:34:14,852 ERROR: Order failed: APIError(code=-1022): Signature for this request is not valid.
+2025-07-08 21:35:01,399 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:35:01,399 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.011, 'price': 60000.0, 'timeInForce': 'GTC'}
+2025-07-08 21:35:02,042 INFO: Order response: {'orderId': 5225227252, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ2345d034bc089d8ff09514', 'price': '60000.00', 'avgPrice': '0.00', 'origQty': '0.011', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751990701953}
+2025-07-08 21:35:36,977 INFO: Initialized BasicBot (testnet=True)
+2025-07-08 21:35:36,977 INFO: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.011}
+2025-07-08 21:35:37,693 INFO: Order response: {'orderId': 5225230099, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJbf7344d66704b857cd1e28', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.011', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1751990737568}
